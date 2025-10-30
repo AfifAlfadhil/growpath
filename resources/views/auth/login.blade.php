@@ -19,7 +19,7 @@
                         <div class="text-center space-y-8">
                             <!-- Plant Illustration - menggunakan gambar Anda -->
                             <div class="flex justify-center mb-12">
-                                <img src="{{ asset('images/GambarPot.png') }}" alt="Plant Pot" class="w-64 h-64 object-contain">
+                                <img src="{{ asset('images/3.svg') }}" alt="zenitsu" class="w-64 h-64 object-contain">
                             </div>
                             
                             <!-- Text -->
