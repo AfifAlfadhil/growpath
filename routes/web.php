@@ -10,3 +10,6 @@ Route::get('/login', function () {
    })->name('login');
    
    Route::post('/login', [AuthController::class, 'login']);
+Route::get('shop', function () {
+    return view('shop');
+});
