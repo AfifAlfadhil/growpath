@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GrowPath - Login</title>
+  <title>GrowPath - Login After</title>
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="min-h-screen w-screen overflow-hidden">
@@ -24,10 +24,10 @@
     <div class="bg-[#FFF8F0] flex flex-col justify-center px-12 lg:px-24">
       <div class="max-w-md w-full mx-auto">
         <h2 class="text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
-          Selamat datang<br />kembali!
+          Yeay, akunmu<br />berhasil dibuat!
         </h2>
         <p class="text-gray-700 text-lg mb-10">
-          Siap melanjutkan progres baikmu hari ini?
+          Ayo login dan mulai bangun kebiasaan pertamamu.
         </p>
 
         <form method="POST" action="{{ route('login') }}" class="space-y-6">
@@ -62,7 +62,6 @@
             />
           </div>
 
-         
           <div
             class="bg-[#FFE8D1] rounded-2xl px-6 py-4 flex items-center gap-4 border-2 border-transparent focus-within:border-[#D97642] transition-all"
           >
