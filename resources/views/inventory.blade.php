@@ -7,8 +7,7 @@
     @vite(['resources/css/app.css', 'resources/css/inventory-style.css','resources/js/app.js', 'resources/js/inventory.js'])
 </head>
 
-<body style="background-image: url('{{ asset('images/Background.svg') }}'); background-repeat: repeat; background-size: auto;" class="min-h-screen">
-
+<body>
     <nav class="bg-[#78A44C] text-white font-bold shadow-lg">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="text-3xl font-black tracking-tight">GROWPATH</a>

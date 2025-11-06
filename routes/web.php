@@ -9,7 +9,6 @@ Route::get('/login', function () {
        return view('auth.login');
    })->name('login');
    
-
 Route::get('/inventory', function () {
     return view('inventory'); 
 });
@@ -21,7 +20,4 @@ Route::post('/register', function (Request $request) {
 
 Route::get('/shop', function () {
     return view('shop');
-});
-Route::get('/shop', function () {
-    return view('shop'); 
 });
