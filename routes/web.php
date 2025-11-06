@@ -9,6 +9,13 @@ Route::get('/login', function () {
        return view('auth.login');
    })->name('login');
    
+Route::get('/loginafter', function () {
+       return view('auth.loginafter');
+   })->name('loginafter');
+
+Route::get('/register', function () {
+       return view('auth.register');
+   })->name('register');
 
 Route::get('/inventory', function () {
     return view('inventory'); 
