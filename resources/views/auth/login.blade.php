@@ -4,47 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GrowPath - Login</title>
-  @vite(['resources/css/app.css', 'resources/js/app.js'])
+  @vite(['resources/css/login.css', 'resources/js/login.js'])
 </head>
-<body class="min-h-screen w-screen overflow-hidden">
-  <div class="grid grid-cols-1 lg:grid-cols-2 h-screen w-screen">
 
-    <div class="bg-[#D97642] flex flex-col items-center justify-center text-white rounded-tr-[1rem] rounded-br-[1rem]">
-      <div class="text-center">
+<body>
+  <div class="container">
+    
+    <div class="left-panel">
+      <div class="logo-box">
         <img
           src="{{ asset('images/GambarPot.png') }}"
           alt="GrowPath Logo"
-          class="w-64 h-64 object-contain mx-auto mb-8"
+          class="logo"
         />
-        <h1 class="text-6xl font-extrabold mb-3 tracking-tight">GROWPATH</h1>
-        <p class="text-2xl font-medium">Tumbuh setiap hari</p>
+        <h1>GROWPATH</h1>
+        <p>Tumbuh setiap hari</p>
       </div>
     </div>
 
-    <div class="bg-[#FFF8F0] flex flex-col justify-center px-12 lg:px-24">
-      <div class="max-w-md w-full mx-auto">
-        <h2 class="text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
-          Selamat datang<br />kembali!
-        </h2>
-        <p class="text-gray-700 text-lg mb-10">
-          Siap melanjutkan progres baikmu hari ini?
-        </p>
+    <div class="right-panel">
+      <div class="login-box">
+        <h2>Selamat datang<br />kembali!</h2>
+        <p>Siap melanjutkan progres baikmu hari ini?</p>
 
-        <form method="POST" action="{{ route('login') }}" class="space-y-6">
+        <form method="POST" action="{{ route('login') }}">
           @csrf
 
-          <div
-            class="bg-[#FFE8D1] rounded-2xl px-6 py-4 flex items-center gap-4 border-2 border-transparent focus-within:border-[#D97642] transition-all"
-          >
-            <div
-              class="w-10 h-10 bg-white rounded-lg flex items-center justify-center"
-            >
-              <svg
-                class="w-6 h-6 text-gray-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+          <div class="input-group">
+            <div class="icon-box">
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -53,28 +41,12 @@
                 />
               </svg>
             </div>
-            <input
-              type="text"
-              name="username"
-              placeholder="Username"
-              required
-              class="flex-1 bg-transparent outline-none text-gray-900 placeholder-gray-500 text-lg font-medium"
-            />
+            <input type="text" name="username" placeholder="Username" required />
           </div>
 
-         
-          <div
-            class="bg-[#FFE8D1] rounded-2xl px-6 py-4 flex items-center gap-4 border-2 border-transparent focus-within:border-[#D97642] transition-all"
-          >
-            <div
-              class="w-10 h-10 bg-white rounded-lg flex items-center justify-center"
-            >
-              <svg
-                class="w-6 h-6 text-gray-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+          <div class="input-group">
+            <div class="icon-box">
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -83,30 +55,15 @@
                 />
               </svg>
             </div>
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              required
-              class="flex-1 bg-transparent outline-none text-gray-900 placeholder-gray-500 text-lg font-medium"
-            />
+            <input type="password" name="password" placeholder="Password" required />
           </div>
 
-          <button
-            type="submit"
-            class="w-full bg-[#D97642] text-white font-bold text-xl py-5 rounded-2xl hover:bg-[#C66A3B] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98]"
-          >
-            Login
-          </button>
+          <button type="submit">Login</button>
         </form>
 
-        <p class="text-center text-gray-700 mt-6 text-lg">
+        <p class="register-text">
           Belum punya akun?
-          <a
-            href="{{ route('register') }}"
-            class="text-[#D97642] font-semibold hover:underline"
-            >Buat di sini</a
-          >
+          <a href="{{ route('register') }}">Buat di sini</a>
         </p>
       </div>
     </div>
