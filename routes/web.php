@@ -30,6 +30,3 @@ Route::post('/register', function (Request $request) {
 Route::get('/shop', function () {
     return view('shop');
 });
-Route::get('/shop', function () {
-    return view('shop'); 
-});
